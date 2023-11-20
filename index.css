@@ -566,3 +566,65 @@ button {
     border: 2px solid rgba(231, 15, 15, 0.518);
     box-shadow: inset 0 0 10px rgba(231, 15, 15, 0.518);
   }
+
+
+
+  
+@media only screen and (max-width: 1200px) {
+    /* Adjust styles for large screens */
+    /* Example: Increase font size for headings */
+    h1 {
+        font-size: xx-large;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* Adjust styles for medium-sized screens */
+    /* Example: Reduce padding in form */
+    form {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for small screens */
+    /* Example: Reduce font size for headings and buttons */
+    h1 {
+        font-size: x-large;
+    }
+
+    button {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* Example: Adjust input widths for better visibility */
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for extra-small screens */
+    /* Example: Further reduce font sizes and padding */
+    h1 {
+        font-size: large;
+        padding-bottom: 10px;
+    }
+
+    button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Example: Further adjust input widths */
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select {
+        width: 100%;
+    }
+}
