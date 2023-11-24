@@ -10,7 +10,7 @@
 
 </head>
 
-<form method="POST" action="https://script.google.com/macros/s/AKfycbzTkaVqfboCw1DSuUlYpliHBQvTWUtpaLr8UqBQ9wJptPOavM2mbyvMlIZWlhkgfu_b6g/exec">
+<form method="POST" action="https://script.google.com/macros/s/AKfycbyDwR8oUj9m0qSGfW4MwYc7p4Eak9MZkjzLCltEKbg_vh1b3mq8iNYnAcl-i3Ech8-Ofw/exec">
 
     <div class="form-container">
 
@@ -51,59 +51,62 @@
             <div class="Age-container">
                 <label for="Age">Age</label>
                 <input type="range" min="18" max="80" value="25" class="Age" name="Age" id="Age" oninput="updateAgeValue()">
-                <input type="number" min="18" max="80" value="25" class="Age" name="Age" id="Age_value"
-                    oninput="updateAgeRange()">
-                <label for="Years" >Years</label>
+                <div class="Age-in-container">
+                    <input type="number" min="18" max="80" value="25" class="Age" name="Age" id="Age_value" oninput="updateAgeRange()">
+                    <label for="Years" >Years</label>
+                </div>
             </div>
 
             <!-- Weight -->
             <div class="Weight-container">
                 <label for="Weight">Weight</label>
-                <input type="range" min="40" max="200" value="60" class="Weight" name="Weight" id="Weight"
-                    oninput="updateWeightValue()">
-                <input type="number" min="40" max="200" value="60" class="Weight" name="Weight" id="Weight_value"
-                    oninput="updateWeightRange()">
-                <label for="kg" >Kg</label>
+                <input type="range" min="40" max="200" value="60" class="Weight" name="Weight" id="Weight" oninput="updateWeightValue()">
+            
+                <div class="Weight-in-container">
+                    <input type="number" min="40" max="200" value="60" class="Weight" name="Weight" id="Weight_value" oninput="updateWeightRange()">
+                    <label for="kg">Kg</label>
+                </div>
             </div>
 
             <!-- Height -->
             <div class="Height-container">
                 <label for="Height">Height</label>
-                <input type="range" min="130" max="240" value="167" class="Height" name="Height" id="Height"
-                    oninput="updateHeightValue()">
-                <input type="number" min="130" max="240" value="167" class="Height" name="Height" id="Height_value"
-                    oninput="updateHeightRange()">
-                <label for="cm">Cm</label>
-            </div>
+                <input type="range" min="130" max="240" value="167" class="Height" name="Height" id="Height" oninput="updateHeightValue()">
+            
+                <div class="Height-in-container">
+                    <input type="number" min="130" max="240" value="167" class="Height" name="Height" id="Height_value" oninput="updateHeightRange()">
+                    <label for="cm">Cm</label>
+                </div>
+            </div> 
 
             <!-- Annual Income -->
             <div class="AnnualIncome-container">
                 <label for="AnnualIncome">Income</label>
-                <input type="range" min="2" max="100" value="8" name="AnnualIncome" class="AnnualIncome" id="AnnualIncome"
-                    oninput="updateAnnualIncomeValue()">
-                <input type="number" min="2" max="100" value="8" class="AnnualIncome" name="AnnualIncome"
-                    id="AnnualIncome_value" oninput="updateAnnualIncomeRange()" >
-                <label for="lpa">LPA</label>
-
+                <input type="range" min="2" max="100" value="8" name="AnnualIncome" class="AnnualIncome" id="AnnualIncome" oninput="updateAnnualIncomeValue()">
+            
+                <div class="AnnualIncome-in-container">
+                    <input type="number" min="2" max="100" value="8" class="AnnualIncome" name="AnnualIncome" id="AnnualIncome_value" oninput="updateAnnualIncomeRange()">
+                    <label for="lpa">LPA</label>
+                </div>
             </div>
 
             <!-- Marital Status -->
             <div class="MaritalStatus-container">
                 <label for="MaritalStatus">Marital Status</label>
                 <div class="all-MaritalStatus-option">
-                    <div class="MaritalStatus-option">
-                        <input type="radio" name="MaritalStatus" id="married" value="married">
+                    <div class="MaritalStatus-option1">
+                        <input type="radio" name="MaritalStatus" id="married" value="married" >
                         <label for="married">Married</label>
                     </div>
-                    <div class="MaritalStatus-option">
-                        <input type="radio" name="MaritalStatus" id="not_married" value="not_married">
+                    <div class="MaritalStatus-option2">
+                        <input type="radio" name="MaritalStatus" id="not_married" value="not_married" >
                         <label for="not_married">Not Married</label>
                     </div>
-                    <div class="MaritalStatus-option">
-                        <input type="radio" name="MaritalStatus" id="divorced" value="divorced">
+                    <div class="MaritalStatus-option3">
+                        <input type="radio" name="MaritalStatus" id="divorced" value="divorced" >
                         <label for="divorced">Divorced</label>
                     </div>
-                    <div class="MaritalStatus-option">
+                    <div class="MaritalStatus-option4">
                         <input type="radio" name="MaritalStatus" id="prefer_not_to_say" value="prefer_not_to_say">
                         <label for="prefer_not_to_say">Prefer Not to Say</label>
                     </div>
@@ -119,24 +122,24 @@
             <div class="fitness-container">
                 <label for="fitnesscontainer">General Health</label>
                 <div class="all-fitness-option">
-                    <div class="fitness-option">
-                        <input type="radio" name="fitness" id="poor" value="poor">
+                    <div class="fitness-option1">
+                        <input type="radio" name="fitness" id="poor" value="poor" >
                         <label for="poor">Poor</label>
                     </div>
-                    <div class="fitness-option">
-                        <input type="radio" name="fitness" id="fair" value="fair">
+                    <div class="fitness-option2">
+                        <input type="radio" name="fitness" id="fair" value="fair" >
                         <label for="fair">Fair</label>
                     </div>
-                    <div class="fitness-option">
-                        <input type="radio" name="fitness" id="good" value="good">
+                    <div class="fitness-option3">
+                        <input type="radio" name="fitness" id="good" value="good" >
                         <label for="good">Good</label>
                     </div>
-                    <div class="fitness-option">
-                        <input type="radio" name="fitness" id="VeryGood" value="VeryGood">
+                    <div class="fitness-option4">
+                        <input type="radio" name="fitness" id="VeryGood" value="VeryGood" >
                         <label for="VeryGood">Very Good</label>
                     </div>
-                    <div class="fitness-option">
-                        <input type="radio" name="fitness" id="excellent" value="excellent">
+                    <div class="fitness-option5">
+                        <input type="radio" name="fitness" id="excellent" value="excellent" >
                         <label for="excellent">Excellent</label>
                     </div>
                 </div>
@@ -145,22 +148,23 @@
             <!-- Exercise -->
             <div class="Exercise-container">
                 <label for="Exercise">Exercise count</label>
-                <input type="range" min="0" max="7" value="2" class="Exercise" name="Exercise" id="Exercise"
-                    oninput="updateExerciseValue()">
-                <input type="number" min="0" max="7" value="2" class="Exercise" name="Exercise" id="Exercise_value"
-                    oninput="updateExerciseRange()">
-                <label for="exercise-week">per Week</label>
+                <input type="range" min="0" max="7" value="2" class="Exercise" name="Exercise" id="Exercise" oninput="updateExerciseValue()">
+            
+                <div class="Exercise-in-container">
+                    <input type="number" min="0" max="7" value="2" class="Exercise" name="Exercise" id="Exercise_value" oninput="updateExerciseRange()">
+                    <label for="exercise-week">per Week</label>
+                </div>
             </div>
 
             <!-- Diabetic -->
             <div class="diabetic-container">
                 <label for="diabetic">Diabetic</label>
                 <div class="all-diabetic-option">
-                    <div class="diabetic-option">
+                    <div class="diabetic-option1">
                         <input type="radio" name="diabetic" id="Yes" value="Yes">
                         <label for="Yes">Yes</label>
                     </div>
-                    <div class="diabetic-option">
+                    <div class="diabetic-option2">
                         <input type="radio" name="diabetic" id="No" value="No">
                         <label for="No">No</label>
                     </div>
@@ -170,11 +174,12 @@
             <!-- Alcohol -->
             <div class="Alcohol-container">
                 <label for="Alcohol">Alcohol</label>
-                <input type="range" min="0" max="12" value="1" class="Alcohol" name="Alcohol" id="Alcohol"
-                    oninput="updateAlcoholValue()">
-                <input type="number" min="0" max="12" value="1" class="Alcohol" name="Alcohol" id="Alcohol_value"
-                    oninput="updateAlcoholRange()">
-                <label for="alcohol-week">per Week</label>
+                <input type="range" min="0" max="12" value="1" class="Alcohol" name="Alcohol" id="Alcohol" oninput="updateAlcoholValue()">
+            
+                <div class="Alcohol-in-container">
+                    <input type="number" min="0" max="12" value="1" class="Alcohol" name="Alcohol" id="Alcohol_value" oninput="updateAlcoholRange()">
+                    <label for="alcohol-week">per Week</label>
+                </div>
             </div>
 
             <div class="smoking-container">
@@ -198,24 +203,24 @@
             <div class="DomesticEnvironment-container">
                 <label for="DomesticEnvironment">Environment</label>
                     <div class="all-DomesticEnvironment-option">
-                    <div class="DomesticEnvironment-option">
+                    <div class="DomesticEnvironment-option1">
                         <input type="radio" name="DomesticEnvironment" id="QuiteToxic" value="QuiteToxic">
                         <label for="QuiteToxic">Quite Toxic</label>
                     </div>
-                    <div class="DomesticEnvironment-option">
+                    <div class="DomesticEnvironment-option2">
                         <input type="radio" name="DomesticEnvironment" id="PreferNotToSayDomesticEnvironment"
                             value="PreferNotToSayDomesticEnvironment">
                         <label for="PreferNotToSayDomesticEnvironment">Not to Say</label>
                     </div>
-                    <div class="DomesticEnvironment-option">
+                    <div class="DomesticEnvironment-option3">
                         <input type="radio" name="DomesticEnvironment" id="HealthyVibes" value="HealthyVibes">
                         <label for="HealthyVibes">Healthy</label>
                     </div>
-                    <div class="DomesticEnvironment-option">
+                    <div class="DomesticEnvironment-option4">
                         <input type="radio" name="DomesticEnvironment" id="Peaceful" value="Peaceful">
                         <label for="Peaceful">Peaceful</label>
                     </div>
-                    <div class="DomesticEnvironment-option">
+                    <div class="DomesticEnvironment-option5">
                         <input type="radio" name="DomesticEnvironment" id="Uplifting" value="Uplifting">
                         <label for="Uplifting">Uplifting</label>
                     </div>
@@ -225,30 +230,31 @@
             <!-- Medicine Consumption -->
             <div class="MedicineConsumption-container">
                 <label for="MedicineConsumption">Medicine</label>
-                <input type="range" min="0" max="5" value="1" class="MedicineConsumption" name="MedicineConsumption"
-                    id="MedicineConsumption" oninput="updateMedicineConsumptionValue()">
-                <input type="number" min="0" max="5" value="1" class="MedicineConsumption" name="MedicineConsumption"
-                    id="MedicineConsumption_value" oninput="updateMedicineConsumptionRange()">
-                <label for="Medicine-day">per Day</label>
+                <input type="range" min="0" max="5" value="1" class="MedicineConsumption" name="MedicineConsumption" id="MedicineConsumption" oninput="updateMedicineConsumptionValue()">
+            
+                <div class="MedicineConsumption-in-container">
+                    <input type="number" min="0" max="5" value="1" class="MedicineConsumption" name="MedicineConsumption" id="MedicineConsumption_value" oninput="updateMedicineConsumptionRange()">
+                    <label for="Medicine-day">per Day</label>
+                </div>
             </div>
 
             <!-- Nutrition -->
             <div class="Nutrition-container">
                 <label for="Nutrition">Nutrition</label>
                 <div class="all-Nutrition-option">
-                    <div class="Nutrition-option">
+                    <div class="Nutrition-option1">
                         <input type="radio" name="Nutrition" id="JunkFoodAddict" value="JunkFoodAddict">
                         <label for="JunkFoodAddict">Junk Food</label>
                     </div>
-                    <div class="Nutrition-option">
+                    <div class="Nutrition-option2">
                         <input type="radio" name="Nutrition" id="HealthyForTheMostPart" value="HealthyForTheMostPart">
                         <label for="HealthyForTheMostPart">Healthy Mostly</label>
                     </div>
-                    <div class="Nutrition-option">
+                    <div class="Nutrition-option3">
                         <input type="radio" name="Nutrition" id="OnlyOnSelectedDates" value="OnlyOnSelectedDates">
                         <label for="OnlyOnSelectedDates">Selected Dates</label>
                     </div>
-                    <div class="Nutrition-option">
+                    <div class="Nutrition-option4">
                         <input type="radio" name="Nutrition" id="NoJunkFood" value="NoJunkFood">
                         <label for="NoJunkFood">No Junk Food</label>
                     </div>
@@ -259,23 +265,23 @@
             <div class="SocialLife-container">
                 <label for="SocialLife">Social Life</label>
                 <div class="all-SocialLife-option">
-                    <div class="SocialLife-option">
+                    <div class="SocialLife-option1">
                         <input type="radio" name="SocialLife" id="None" value="None">
                         <label for="None">None</label>
                     </div>
-                    <div class="SocialLife-option">
+                    <div class="SocialLife-option2">
                         <input type="radio" name="SocialLife" id="Barely" value="Barely">
                         <label for="Barely">Barely</label>
                     </div>
-                    <div class="SocialLife-option">
+                    <div class="SocialLife-option3">
                         <input type="radio" name="SocialLife" id="Healthy" value="Healthy">
                         <label for="Healthy">Healthy</label>
                     </div>
-                    <div class="SocialLife-option">
+                    <div class="SocialLife-option4">
                         <input type="radio" name="SocialLife" id="ManyCloseFriends" value="ManyCloseFriends">
                         <label for="ManyCloseFriends">Crew</label>
                     </div>
-                    <div class="SocialLife-option">
+                    <div class="SocialLife-option5">
                         <input type="radio" name="SocialLife" id="SocialFreak" value="SocialFreak">
                         <label for="SocialFreak">Social Freak</label>
                     </div>
@@ -285,34 +291,35 @@
             <!-- Sleep Schedule -->
             <div class="SleepSchedule-container">
                 <label for="SleepSchedule">Hours of Sleep</label>
-                <input type="range" min="0" max="12" value="7" class="SleepSchedule" name="SleepSchedule" id="SleepSchedule"
-                    oninput="updateSleepScheduleValue()">
-                <input type="number" min="0" max="12" value="7" class="SleepSchedule" name="SleepSchedule"
-                    id="SleepSchedule_value" oninput="updateSleepScheduleRange()">
-                <label for="sleep-day">per Day</label>
+                <input type="range" min="0" max="12" value="7" class="SleepSchedule" name="SleepSchedule" id="SleepSchedule" oninput="updateSleepScheduleValue()">
+            
+                <div class="SleepSchedule-in-container">
+                    <input type="number" min="0" max="12" value="7" class="SleepSchedule" name="SleepSchedule" id="SleepSchedule_value" oninput="updateSleepScheduleRange()">
+                    <label for="sleep-day">per Day</label>
+                </div>
             </div>
 
             <!-- Chronic Mental Health -->
             <div class="ChronicMentalHealth-container">
                 <label for="ChronicMentalHealth">Mental Health</label>
                 <div class="all-ChronicMentalHealth-option">
-                    <div class="ChronicMentalHealth-option">
+                    <div class="ChronicMentalHealth-option1">
                         <input type="radio" name="ChronicMentalHealth" id="Depressed-Pessimistic" value="Depressed-Pessimistic">
                         <label for="Depressed-Pessimistic">Depressed</label>
                     </div>
-                    <div class="ChronicMentalHealth-option">
+                    <div class="ChronicMentalHealth-option2">
                         <input type="radio" name="ChronicMentalHealth" id="Stressed-Worried" value="Stressed-Worried">
                         <label for="Stressed-Worried">Stressed</label>
                     </div>
-                    <div class="ChronicMentalHealth-option">
+                    <div class="ChronicMentalHealth-option3">
                         <input type="radio" name="ChronicMentalHealth" id="Complex" value="Complex">
                         <label for="Complex">Complex</label>
                     </div>
-                    <div class="ChronicMentalHealth-option">
+                    <div class="ChronicMentalHealth-option4">
                         <input type="radio" name="ChronicMentalHealth" id="Positive" value="Positive">
                         <label for="Positive">Positive</label>
                     </div>
-                    <div class="ChronicMentalHealth-option">
+                    <div class="ChronicMentalHealth-option5">
                         <input type="radio" name="ChronicMentalHealth" id="Calm" value="Calm">
                         <label for="Calm">Calm</label>
                     </div>
