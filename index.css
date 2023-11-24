@@ -689,6 +689,7 @@ h1{
 
 .dob-container input{
     width: 87vw; /* Adjust the percentage based on your design needs */
+    height: 30px;
     margin: 0 auto;
     margin-left: 0px;
     border-radius: 3px;
